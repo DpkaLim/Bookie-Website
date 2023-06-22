@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bookie Website</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/normalize.css" type="text/css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      <link href="css/styles.css" type="text/css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="main-grid">
+         <div class="grid-container">
+            <header>
+               <!-- logo and navigation -->
+               <nav>
+                  <div class="logo">
+                     <img src="images/Booki@3x.png" sizes="100vw" alt="logo"
+                        srcset="images/Booki.png 320w,images/Booki@3x.png 760w">                           
+                  </div>
+                  <div class="nav-links">
+                     <ul>
+                        <li><a href="#accomodations">Accommodations</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                     </ul>
+                  </div>
+               </nav>
+               <!-- title and subtitle -->
+               <div class="text-box">
+                  <h1><strong>Find a place for your dream vacation</strong></h1>
+                  <p>Downtown or in nature</p>
+               </div>
+               <br>
+               <!-- search box -->
+               <div class="search-box">
+                  <form>
+                     <i class="fa-solid fa-location-dot"></i>
+                     <input type="text" placeholder="Marseille, France">
+                  </form>
+                  <button type="submit" value="search">Search</button>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+               <br>
+               <!-- filter starts here -->          
+               <div class="filter-container">
+                  <div class="filter-title">
+                     <p><strong>Filters</strong></p>
+                  </div>
+                  <div class="filter1">
+                     <div class="filter-icon">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                     </div>
+                     <div class="filter-text"><strong>Low cost</strong></div>
+                  </div>
+                  <div class="filter2">
+                     <div class="filter-icon">
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+                     </div>
+                     <div class="filter-text"><strong>Romantic</strong></div>
+                  </div>
+                  <div class="filter3">
+                     <div class="filter-icon">
+                        <i class="fa-solid fa-person"></i>
+                     </div>
+                     <div class="filter-text"><strong>Family-friendly</strong></div>
+                  </div>
+                  <div class="filter4">
+                     <div class="filter-icon">
+                        <i class="fa-solid fa-dog"></i>
+                     </div>
+                     <div class="filter-text"><strong>Pets allowed</strong></div>
+                  </div>
+               </div>
+            </header>
+            <!-- header ends here -->
+            <!-- information -->
+            <div class="info-line">
+               <div class="info-icon">
+                  <i class="fa-solid fa-info"></i>
+               </div>
+               <div class="info-text">
+                  <p>More than 500 accommodations are available in this city</p>
+               </div>
+            </div>
+            <br>
+            <!-- accommodations and popular -->
+            <section class="col-container">
+               <!-- Accommodation section -->
+               <div class="col-70-desktop col-100-mobile background-radius mobile-order-2">
+                  <div id="accomodations" class="card-accommodations">
+                     <div class="col-container">
+                        <div class="col">
+                           <h2 class="hotel-title"><a href="">Accommodations in Marseille</a></h2>
+                        </div>
+                        <!-- hotel auberge La Cannebiere -->
+                        <div class="col-33-desktop col-50-tablet col-100-mobile">
+                           <div class="card-primary">
+                              <a href="">
+                                 <div class="image">
+                                    <img src="images/hotels/4_small/cannebiere.jpg" sizes="100vw"
+                                       srcset="images/hotels/4_small/cannebiere.jpg 320w,images/hotels/3_medium/cannebiere.jpg 480w,images/hotels/2_large/cannebiere.jpg 760w,images/hotels/1_xlarge/cannebiere.jpg 992w"
+                                       alt="Cannebiere hotel">
+                                 </div>
+                                 <div class="description">
+                                    <div class="hotel-text">
+                                       <h2><strong>Auberge La Cannebi&egrave;re</strong></h2>
+                                       <p>Night starting at <strong>25€</strong></p>
+                                    </div>
+                                    <div class="icon">
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="card-blank-star fa-solid fa-star"></i>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- hotel du port -->
+                        <div class="col-33-desktop col-50-tablet col-100-mobile">
+                           <div class="card-primary">
+                              <a href="">
+                                 <div class="image">
+                                    <img src="images/hotels/4_small/hotelduport.jpg" sizes="100vw"
+                                       srcset="images/hotels/4_small/hotelduport.jpg 320w,images/hotels/3_medium/hotelduport.jpg 480w,images/hotels/2_large/hotelduport.jpg 760w,images/hotels/1_xlarge/hotelduport.jpg 992w"
+                                       alt="hotel du port">                               
+                                 </div>
+                                 <div class="description">
+                                    <div class="hotel-text">
+                                       <h2><strong>H&ocirc;tel du port</strong></h2>
+                                       <p>Night starting at <strong>52€</strong></p>
+                                    </div>
+                                    <div class="icon">
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- hotel Les mouettes -->
+                        <div class="col-33-desktop col-50-tablet col-100-mobile">
+                           <div class="card-primary">
+                              <a href="">
+                                 <div class="image">
+                                    <img src="images/hotels/4_small/lesmouettes.jpg" sizes="100vw"
+                                       srcset="images/hotels/4_small/lesmouettes.jpg 320w,images/hotels/3_medium/mouetteshotel.jpg 480w,images/hotels/2_large/mouetteshotel.jpg 760w,images/hotels/1_xlarge/mouetteshotel.jpg 992w"
+                                       alt="les mouettes hotel"> 
+                                 </div>
+                                 <div class="description">
+                                    <div class="hotel-text">
+                                       <h2><strong>Les mouettes Hotel</strong></h2>
+                                       <p>Night starting at <strong>76€</strong></p>
+                                    </div>
+                                    <div class="icon">
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="card-blank-star fa-solid fa-star"></i>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- hotel de la mer -->
+                        <div class="col-33-desktop col-50-tablet col-100-mobile">
+                           <div class="card-primary">
+                              <a href="">
+                                 <div class="image">
+                                    <img src="images/hotels/4_small/hoteldelamer.jpg" sizes="100vw"
+                                       srcset="images/hotels/4_small/hoteldelamer.jpg 320w,images/hotels/3_medium/hoteldelamer.jpg 480w,images/hotels/2_large/hoteldelamer.jpg 760w,images/hotels/1_xlarge/hoteldelamer.jpg 992w"
+                                       alt="hotel de la mer"> 
+                                 </div>
+                                 <div class="description">
+                                    <div class="hotel-text">
+                                       <h2><strong>H&ocirc;tel de la mer</strong></h2>
+                                       <p>Night starting at <strong>46€</strong></p>
+                                    </div>
+                                    <div class="icon">
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="card-blank-star fa-solid fa-star"></i>
+                                       <i class="card-blank-star fa-solid fa-star"></i>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- hotel auberge le panier -->
+                        <div class="col-33-desktop col-50-tablet col-100-mobile">
+                           <div class="card-primary">
+                              <a href="">
+                                 <div class="image">
+                                    <img src="images/hotels/4_small/lepanier.jpg" sizes="100vw"
+                                       srcset="images/hotels/4_small/lepanier.jpg 320w,images/hotels/3_medium/lepanier.jpg 480w,images/hotels/2_large/lepanier.jpg 760w,images/hotels/1_xlarge/lepanier.jpg 992w"
+                                       alt="hotel auberge le panier"> 
+                                 </div>
+                                 <div class="description">
+                                    <div class="hotel-text">
+                                       <h2><strong>Auberge Le Panier</strong></h2>
+                                       <p>Night starting at <strong>23€</strong></p>
+                                    </div>
+                                    <div class="icon">
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="card-blank-star fa-solid fa-star"></i>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- hotel chez amina -->
+                        <div class="col-33-desktop col-50-tablet col-100-mobile">
+                           <div class="card-primary">
+                              <a href="">
+                                 <div class="image">
+                                    <img src="images/hotels/4_small/chezamina.jpg" sizes="100vw"
+                                       srcset="images/hotels/4_small/chezamina.jpg 320w,images/hotels/3_medium/chezamina.jpg 480w,images/hotels/2_large/chezamina.jpg 760w,images/hotels/1_xlarge/chezamina.jpg 992w"
+                                       alt="hotel chez amina">
+                                 </div>
+                                 <div class="description">
+                                    <div class="hotel-text">
+                                       <h2><strong>H&ocirc;tel chez Amina</strong></h2>
+                                       <p>Night starting at <strong>96€</strong></p>
+                                    </div>
+                                    <div class="icon">
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- end div for the card container -->
+                        <div class="col">
+                           <div class="card-show-more"><a href=""><strong>Show more</strong></a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end div for the accommodation container --> 
+               <!-- popular section -->
+               <div class="col-30-desktop col-100-mobile background-radius">
+                  <div class="card-popular">
+                     <div class="popular-title">
+                        <h3 class="hotel-title"><a href=""><strong>Most Popular</strong></a></h3>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <div class="card-container2">
+                        <!-- morning sun hotel-->
+                        <div class="card-secondary">
+                           <a href="">
+                              <div class="popular-image">
+                                 <img src="images/hotels/4_small/morningsun.jpg" sizes="100vw"
+                                    srcset="images/hotels/4_small/morningsun.jpg 320w,images/hotels/3_medium/morningsun.jpg 480w,images/hotels/2_large/morningsun.jpg 760w,images/hotels/1_xlarge/morningsun.jpg 992w"
+                                    alt="morning sun hotel">
+                              </div>
+                           </a>
+                           <div class="description">
+                              <a href="">
+                                 <div class="hotel-text sun-hotel">
+                                    <h3>Morning Sun Hotel</h3>
+                                    <p>Night starting at <strong>128€</strong></p>
+                                 </div>
+                                 <div class="icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- Au coeur hotel -->
+                        <div class="card-secondary">
+                           <a href="">
+                              <div class="popular-image">
+                                 <img src="images/hotels/4_small/bedandbreakfast.jpg" sizes="100vw"
+                                    srcset="images/hotels/4_small/bedandbreakfast.jpg 320w,images/hotels/3_medium/bedandbreakfast.jpg 480w,images/hotels/2_large/bedandbreakfast.jpg 760w,images/hotels/1_xlarge/bedandbreakfast.jpg 992w"
+                                    alt="Au coeur hotel">
+                              </div>
+                           </a>
+                           <div class="description">
+                              <a href="">
+                                 <div class="hotel-text">
+                                    <h3><strong>Au Coeur de l'eau Bed and Breakfast</strong></h3>
+                                    <p>Night starting at <strong>71€</strong></p>
+                                 </div>
+                                 <div class="icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="card-blank-star fa-solid fa-star"></i>                         
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- Tout bleu hotel -->
+                        <div class="card-secondary">
+                           <a href="">
+                              <div class="popular-image">
+                                 <img src="images/hotels/4_small/bleuetblanc.jpg" sizes="100vw"
+                                    srcset="images/hotels/4_small/bleuetblanc.jpg 320w,images/hotels/3_medium/bleuetblanc.jpg 480w,images/hotels/2_large/bleuetblanc.jpg 760w,images/hotels/1_xlarge/bleuetblanc.jpg 992w"
+                                    alt="Tout bleu hotel">                      
+                              </div>
+                           </a>
+                           <div class="description">
+                              <a href="">
+                                 <div class="hotel-text">
+                                    <h3><strong>Tout bleu et Blanc<br>hotel</strong></h3>
+                                    <p>Night starting at <strong>68€</strong></p>
+                                 </div>
+                                 <div class="icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="card-blank-star fa-solid fa-star"></i>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end div for the card container2-->  
+                  </div>
+               </div>
+               <!-- end div for the card popular -->  
+            </section>
+            <!-- end div for the card section -->   
+            <!-- activities to go here -->
+            <div id="activities" class="activities-section">
+               <h3 class="activity-title"><a href=""><strong>Activities in Marseille</strong></a></h3>
+               <div class="activity-cards">
+                  <div class="col-container">
+                     <div class="col-25-desktop col-50-tablet col-100-mobile">
+                        <!-- old port activity -->
+                        <div class="card-long">
+                           <a href="">
+                              <div class="activity-image">
+                                 <img src="images/activites/3_medium/oldport.jpg" sizes="100vw"
+                                    srcset="images/activites/4_small/oldport.jpg 320w,images/activites/3_medium/oldport.jpg 480w,images/activites/2_large/oldport.jpg 760w,images/activites/1_xlarge/oldport.jpg 992w"
+                                    alt="image of old port">
+                              </div>
+                              <div class="activity-text">
+                                 <p><strong>Old Port</strong></p>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-25-desktop col-50-tablet col-100-mobile">
+                        <!-- pomegues fort -->
+                        <div class="column-activity-card">
+                           <div class="card-medium">
+                              <a href="">
+                                 <div class="activity-image">
+                                    <img src="images/activites/4_small/fort.jpg" sizes="100vw"
+                                       srcset="images/activites/4_small/fort.jpg 320w,images/activites/3_medium/fort.jpg 480w,images/activites/2_large/fort.jpg 760w,images/activites/1_xlarge/fort.jpg 992w"
+                                       alt="pomegues fort">
+                                 </div>
+                                 <div class="activity-text">
+                                    <p><strong>Pom&egrave;gues Fort</strong></p>
+                                 </div>
+                              </a>
+                           </div>
+                           <!-- Frioul Island -->
+                           <div class="card-small">
+                              <a href="">
+                                 <div class="activity-image">
+                                    <img src="images/activites/4_small/island.jpg" sizes="100vw"
+                                       srcset="images/activites/4_small/island.jpg 320w,images/activites/3_medium/island.jpg 480w,images/activites/2_large/island.jpg 760w,images/activites/1_xlarge/island.jpg 992w"
+                                       alt="Frioul island">
+                                 </div>
+                                 <div class="activity-text">
+                                    <p><strong>Frioul Island</strong></p>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-25-desktop col-50-tablet col-100-mobile">
+                        <!-- calanques park card -->
+                        <div class="card-long">
+                           <a href="">
+                              <div class="activity-image">
+                                 <img src="images/activites/3_medium/nationalpark.jpg" sizes="100vw" 
+                                    srcset="images/activites/4_small/nationalpark.jpg 320w,images/activites/3_medium/nationalpark.jpg 480w,images/activites/2_large/nationalpark.jpg 760w,images/activites/1_xlarge/nationalpark.jpg 992w"
+                                    alt="national park">
+                              </div>
+                              <div class="activity-text">
+                                 <p><strong>Calanques National Park</strong></p>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-25-desktop col-50-tablet col-100-mobile">
+                        <!-- notre dame card -->
+                        <div class="column-activity-card">
+                           <div class="card-medium">
+                              <a href="">
+                                 <div class="activity-image">
+                                    <img src="images/activites/4_small/notredame.jpg" sizes="100vw"
+                                       srcset="images/activites/4_small/notredame.jpg 320w,images/activites/3_medium/notredame.jpg 480w,images/activites/2_large/notredame.jpg 760w,images/activites/1_xlarge/notredame.jpg 992w"
+                                       alt="Notre Dame">
+                                 </div>
+                                 <div class="activity-text">
+                                    <p><strong>Notre-Dame-de-la-Garde</strong></p>
+                                 </div>
+                              </a>
+                           </div>
+                           <!-- longchamp park -->
+                           <div class="card-small">
+                              <a href="">
+                                 <div class="activity-image">
+                                    <img src="images/activites/4_small/longchamp.jpg" sizes="100vw"
+                                       srcset="images/activites/4_small/longchamp.jpg 320w,images/activites/3_medium/longchamp.jpg 480w,images/activites/2_large/longchamp.jpg 760w,images/activites/1_xlarge/longchamp.jpg 992w"
+                                       alt="Longchamp Park">
+                                 </div>
+                                 <div class="activity-text">
+                                    <p><strong>Longchamp Park</strong></p>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- end div for column cards -->
+                     </div>
+                  </div>
+               </div>
+               <!-- end div for activity card holding all cards -->
+            </div>
+            <!-- end div for activities section-->
+         </div>
+         <!-- end div for main container -->      
+         <!-- footer -->
+         <footer class="footer">
+            <div class="footer-list">
+               <div class="col-container">
+                  <div class="col-33-desktop col-100-mobile">
+                     <div class="footer-title">
+                        <p><a href=""><strong>About</strong></a></p>
+                     </div>
+                     <ul>
+                        <li><a href="">Site Map</a></li>
+                        <li><a href="">General Terms and Conditions</a></li>
+                        <li><a href="">Data and Privacy</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-33-desktop col-100-mobile">
+                     <div class="footer-title">
+                        <p><a href=""><strong>Our Accommodations</strong></a></p>
+                     </div>
+                     <ul>
+                        <li><a href="">Quality Assessment</a></li>
+                        <li><a href="">You have a hotel?</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-33-desktop col-100-mobile">
+                     <div class="footer-title">
+                        <p><a href=""><strong>Assistance</strong></a></p>
+                     </div>
+                     <ul>
+                        <li><a href="">Help Desk</a></li>
+                        <li><a href="">Contact us</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- end div for the footer list -->
+         </footer>
+      </div>
+   </body>
+</html>
